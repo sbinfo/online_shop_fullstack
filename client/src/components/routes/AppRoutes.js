@@ -18,9 +18,9 @@ export default function AppRoutes () {
             <Route path={DEVICE_ROUTE + '/:id'} element={<DevicePage />} />
 
             <Route path={ADMIN_ROUTE} element={
-                    <ProtectedRoute>
-                        <Admin />
-                    </ProtectedRoute>
+                <ProtectedRoute>
+                    <Admin />
+                </ProtectedRoute>
             } />
             <Route path={BASKET_ROUTE} element={
                 <ProtectedRoute>
